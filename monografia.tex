@@ -1,0 +1,324 @@
+% Arquivo LaTeX de exemplo de disserta��o/tese a ser apresentados � CPG do IME-USP
+% 
+% Vers�o 5: Sex Mar  9 18:05:40 BRT 2012
+%
+% Cria��o: Jes�s P. Mena-Chalco
+% Revis�o: Fabio Kon e Paulo Feofiloff
+%  
+% Obs: Leia previamente o texto do arquivo README.txt
+
+\documentclass[11pt,twoside,a4paper]{book}
+
+% ---------------------------------------------------------------------------- %
+% Pacotes 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage[pdftex]{graphicx}           % usamos arquivos pdf/png como figuras
+\usepackage{setspace}                   % espa�amento flex�vel
+\usepackage{indentfirst}                % indenta��o do primeiro par�grafo
+\usepackage{makeidx}                    % �ndice remissivo
+\usepackage[nottoc]{tocbibind}          % acrescentamos a bibliografia/indice/conteudo no Table of Contents
+\usepackage{courier}                    % usa o Adobe Courier no lugar de Computer Modern Typewriter
+\usepackage{type1cm}                    % fontes realmente escal�veis
+\usepackage{listings}                   % para formatar c�digo-fonte (ex. em Java)
+\usepackage{titletoc}
+%\usepackage[bf,small,compact]{titlesec} % cabe�alhos dos t�tulos: menores e compactos
+\usepackage[fixlanguage]{babelbib}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage[a4paper,top=2.54cm,bottom=2.0cm,left=2.0cm,right=2.54cm]{geometry} % margens
+%\usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=black,linkcolor=black,urlcolor=black,filecolor=black,bookmarksopen=true]{hyperref} % links em preto
+\usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=DarkGreen,linkcolor=NavyBlue,urlcolor=DarkRed,filecolor=green,bookmarksopen=true]{hyperref} % links coloridos
+\usepackage[all]{hypcap}                % soluciona o problema com o hyperref e capitulos
+\usepackage[square,sort,nonamebreak,comma]{natbib}  % cita��o bibliogr�fica alpha (alpha-ime.bst)
+\fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
+
+% ---------------------------------------------------------------------------- %
+% Cabe�alhos similares ao TAOCP de Donald E. Knuth
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{#1}}{}}
+\renewcommand{\headrulewidth}{0pt}
+
+% ---------------------------------------------------------------------------- %
+\graphicspath{{./figuras/}}             % caminho das figuras (recomend�vel)
+\frenchspacing                          % arruma o espa�o: id est (i.e.) e exempli gratia (e.g.) 
+\urlstyle{same}                         % URL com o mesmo estilo do texto e n�o mono-spaced
+\makeindex                              % para o �ndice remissivo
+\raggedbottom                           % para n�o permitir espa�os extra no texto
+\fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
+\cleardoublepage
+\normalsize
+
+% ---------------------------------------------------------------------------- %
+% Op��es de listing usados para o c�digo fonte
+% Ref: http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+\lstset{ %
+language=Java,                  % choose the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,	                % adds a frame around the code
+framerule=0.6pt,
+tabsize=2,	                    % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+escapeinside={\%*}{*)},         % if you want to add a comment within your code
+backgroundcolor=\color[rgb]{1.0,1.0,1.0}, % choose the background color.
+rulecolor=\color[rgb]{0.8,0.8,0.8},
+extendedchars=true,
+xleftmargin=10pt,
+xrightmargin=10pt,
+framexleftmargin=10pt,
+framexrightmargin=10pt
+}
+
+% ---------------------------------------------------------------------------- %
+% Corpo do texto
+\begin{document}
+\frontmatter 
+% cabe�alho para as p�ginas das se��es anteriores ao cap�tulo 1 (frontmatter)
+\fancyhead[RO]{{\footnotesize\rightmark}\hspace{2em}\thepage}
+\setcounter{tocdepth}{2}
+\fancyhead[LE]{\thepage\hspace{2em}\footnotesize{\leftmark}}
+\fancyhead[RE,LO]{}
+\fancyhead[RO]{{\footnotesize\rightmark}\hspace{2em}\thepage}
+
+\onehalfspacing  % espa�amento
+
+% ---------------------------------------------------------------------------- %
+% CAPA
+% Nota: O t�tulo para as disserta��es/teses do IME-USP devem caber em um 
+% orif�cio de 10,7cm de largura x 6,0cm de altura que h� na capa fornecida pela SPG.
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{2.3cm}
+    \textbf{\Large{Estudo da usabilidade \\
+    na rede colaborativa acadêmica Stoa}}\\
+    
+    \vspace*{1.2cm}
+    \Large{Ana Luísa de Almeida Losnak}
+    
+    \vskip 2cm
+    \textsc{
+    Monografia apresentada\\[-0.25cm] 
+    ao\\[-0.25cm]
+    Instituto de Matemática e Estatística\\[-0.25cm]
+    da\\[-0.25cm]
+    Universidade de São Paulo\\[-0.25cm]
+    para\\[-0.25cm]
+    graduação no curso\\[-0.25cm]
+    de\\[-0.25cm]
+    Ciências da Computação}
+    
+    \vskip 1.5cm
+    %Programa: Nome do Programa\\
+    Orientador: Prof. Dr. Fabio Kon
+    
+    \vskip 0.5cm
+    \normalsize{São Paulo, dezembro de 2014}
+\end{center}
+
+% ---------------------------------------------------------------------------- %
+% P�gina de rosto (S� PARA A VERS�O DEPOSITADA - ANTES DA DEFESA)
+% Resolu��o CoPGr 5890 (20/12/2010)
+%
+% IMPORTANTE:
+%   Coloque um '%' em todas as linhas
+%   desta p�gina antes de compilar a vers�o
+%   final, corrigida, do trabalho
+%
+%
+%\newpage
+%\thispagestyle{empty}
+%    \begin{center}
+%        \vspace*{2.3 cm}
+%        \textbf{\Large{T�tulo do trabalho a ser apresentado � \\
+%        CPG para a disserta��o/tese}}\\
+%        \vspace*{2 cm}
+%    \end{center}
+%
+%    \vskip 2cm
+%
+%    \begin{flushright}
+%	Esta � a vers�o original da disserta��o/tese elaborada pelo\\
+%	candidato (Nome Completo do Aluno), tal como \\
+%	submetida � Comiss�o Julgadora.
+%    \end{flushright}
+%
+%\pagebreak
+
+
+% ---------------------------------------------------------------------------- %
+% P�gina de rosto (S� PARA A VERS�O CORRIGIDA - AP�S DEFESA)
+% Resolu��o CoPGr 5890 (20/12/2010)
+%
+% Nota: O t�tulo para as disserta��es/teses do IME-USP devem caber em um 
+% orif�cio de 10,7cm de largura x 6,0cm de altura que h� na capa fornecida pela SPG.
+%
+% IMPORTANTE:
+%   Coloque um '%' em todas as linhas desta
+%   p�gina antes de compilar a vers�o do trabalho que ser� entregue
+%   � Comiss�o Julgadora antes da defesa
+%
+%
+%\newpage
+%\thispagestyle{empty}
+%    \begin{center}
+%        \vspace*{2.3 cm}
+%        \textbf{\Large{T�tulo do trabalho a ser apresentado � \\
+%        CPG para a disserta��o/tese}}\\
+%        \vspace*{2 cm}
+%    \end{center}
+%
+%    \vskip 2cm
+%
+%    \begin{flushright}
+%	Esta vers�o da disserta��o/tese cont�m as corre��es e altera��es sugeridas\\
+%	pela Comiss�o Julgadora durante a defesa da vers�o original do trabalho,\\
+%	realizada em 14/12/2010. Uma c�pia da vers�o original est� dispon�vel no\\
+%	Instituto de Matem�tica e Estat�stica da Universidade de S�o Paulo.
+%
+%    \vskip 2cm
+%
+%   \end{flushright}
+%    \vskip 4.2cm
+%
+%    \begin{quote}
+%    \noindent Comiss�o Julgadora:
+%    
+%    \begin{itemize}
+%		\item Prof�. Dr�. Nome Completo (orientadora) - IME-USP [sem ponto final]
+%		\item Prof. Dr. Nome Completo - IME-USP [sem ponto final]
+%		\item Prof. Dr. Nome Completo - IMPA [sem ponto final]
+%    \end{itemize}
+%      
+%    \end{quote}
+%\pagebreak
+
+
+\pagenumbering{roman}     % come�amos a numerar 
+
+% ---------------------------------------------------------------------------- %
+% Agradecimentos:
+% Se o candidato n�o quer fazer agradecimentos, deve simplesmente eliminar esta p�gina 
+%\chapter*{Agradecimentos}
+
+
+% ---------------------------------------------------------------------------- %
+% Resumo
+\chapter*{Resumo}
+
+\noindent LOSNAK, A. L. L. \textbf{Estudo da usabilidade na rede colaborativa acadêmica Stoa}. 
+2014.
+Trabalho de Formatura Supervisionado - Instituto de Matemática e Estatística,
+Universidade de São Paulo, São Paulo, 2014.
+\\
+
+%Elemento obrigat�rio, constitu�do de uma sequ�ncia de frases concisas e
+%objetivas, em forma de texto.  Deve apresentar os objetivos, m�todos empregados,
+%resultados e conclus�es.  O resumo deve ser redigido em par�grafo �nico, conter
+%no m�ximo 500 palavras e ser seguido dos termos representativos do conte�do do
+%trabalho (palavras-chave). 
+O presente trabalho visa apresentar o estudo da usabilidade na rede colaborativa acadêmica Stoa. Para tanto, foram pesquisados termos relacionados à palavra usabilidade, para melhor entendimento dos conceitos presentes nesta área, e vários métodos existentes na avaliação da usabilidade, para eleição dos mais adequados a este cenário específico. 
+Este estudo apresenta os conceitos e as métricas de usabilidade sob a luz de teóricos como Barnum (2001), Krug (2000), Tullis (2013), dentre outros. Com estas referências, afirma que todos os termos relacionados à usabilidade envolvem o usuário e, portanto, é presumível que os testes de usabilidade sejam realizados com usuários do produto. 
+É constatado que há dois tipos de testes que podem ser aplicados durante o processo de produção, em diferentes fases do projeto, o somativo e o formativo. Este trabalho opta pelo teste somativo, pela necessidade em se obter uma visão global das principais falhas de usabilidade presentes na rede colaborativa Stoa e de comparar os objetivos do sistema com as motivações e objetivos dos usuários ao utilizarem a rede. 
+Para a coleta dos dados, foi aplicado um formulário durante o período de um mês. Após a coleta, uma análise quantitativa dos mesmos foi realizada. As funcionalidades, dentro de categorias escolhidas durante a elaboração do formulário, foram ordenadas com base na experiência do usuário com as mesmas, para posterior seleção das principais funcionalidades com falhas de usabilidade. Como conclusões obtidas neste trabalho, pode-se citar a influência que o tratamento de dados possui na elaboração de um formulário e a importância dos usuários no desenvolvimento de \emph{software}.
+\\
+
+\noindent \textbf{Palavras-chave:} usabilidade, rede colaborativa, stoa, teste somativo.
+
+% ---------------------------------------------------------------------------- %
+% Abstract
+%\chapter*{Abstract}
+%\noindent SOBRENOME, A. B. C. \textbf{Título do trabalho em inglês}. 
+%2010. 120 f.
+%Tese (Doutorado) - Instituto de Matemática e Estatística,
+%Universidade de São Paulo, São Paulo, 2010.
+
+
+%Elemento obrigat�rio, elaborado com as mesmas caracter�sticas do resumo em
+%l�ngua portuguesa. De acordo com o Regimento da P�s- Gradua��o da USP (Artigo
+%99), deve ser redigido em ingl�s para fins de divulga��o. 
+
+%\noindent \textbf{Keywords:} keyword1, keyword2, keyword3.
+
+% ---------------------------------------------------------------------------- %
+% Sum�rio
+\tableofcontents    % imprime o sum�rio
+
+% ---------------------------------------------------------------------------- %
+%\chapter{Lista de Abreviaturas}
+%\begin{tabular}{ll}
+%         CFT         & Transformada cont�nua de Fourier (\emph{Continuous Fourier Transform})\\
+%         DFT         & Transformada discreta de Fourier (\emph{Discrete Fourier Transform})\\
+%        EIIP         & Potencial de intera��o el�tron-�on (\emph{Electron-Ion Interaction Potentials})\\
+%        STFT         & Tranformada de Fourier de tempo reduzido (\emph{Short-Time Fourier Transform})\\
+%\end{tabular}
+
+% ---------------------------------------------------------------------------- %
+%\chapter{Lista de S�mbolos}
+%\begin{tabular}{ll}
+%        $\omega$    & Frequ�ncia angular\\
+%        $\psi$      & Fun��o de an�lise \emph{wavelet}\\
+%        $\Psi$      & Transformada de Fourier de $\psi$\\
+%\end{tabular}
+
+           
+
+% ---------------------------------------------------------------------------- %
+% Cap�tulos do trabalho
+\mainmatter
+
+% cabe�alho para as p�ginas de todos os cap�tulos
+\fancyhead[RE,LO]{\thesection}
+
+%\singlespacing              % espa�amento simples
+\onehalfspacing            % espa�amento um e meio
+
+\input cap-introducao        % associado ao arquivo: 'cap-introducao.tex'
+\input cap-revisao-literatura % associado ao arquivo: 'cap-revisao-literatura.tex'
+\input cap-metodologia       % associado ao arquivo: 'cap-metodologia.tex'
+\input cap-estudo            % associado ao arquivo: 'cap-estudo.tex'
+\input cap-melhorias         % associado ao arquivo: 'cap-melhorias.tex'
+\input cap-conclusoes        % associado ao arquivo: 'cap-conclusoes.tex'
+
+% cabe�alho para os ap�ndices
+%\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\appendixname\ \thechapter}} {\MakeUppercase{#1}} }
+%\fancyhead[RE,LO]{}
+%\appendix
+
+%\include{ape-conjuntos}      % associado ao arquivo: 'ape-conjuntos.tex'
+
+% ---------------------------------------------------------------------------- %
+% Listas de figuras e tabelas criadas automaticamente
+\listoffigures            
+%\listoftables 
+
+% ---------------------------------------------------------------------------- %
+% Bibliografia
+\backmatter \singlespacing   % espa�amento simples
+\bibliographystyle{alpha-ime}% cita��o bibliogr�fica alpha
+\bibliography{bibliografia}  % associado ao arquivo: 'bibliografia.bib'
+
+% ---------------------------------------------------------------------------- %
+% �ndice remissivo
+%\index{TBP|see{periodicidade regi�o codificante}}
+%\index{DSP|see{processamento digital de sinais}}
+%\index{STFT|see{transformada de Fourier de tempo reduzido}}
+%\index{DFT|see{transformada discreta de Fourier}}
+%\index{Fourier!transformada|see{transformada de Fourier}}
+
+%\printindex   % imprime o �ndice remissivo no documento 
+
+\end{document}

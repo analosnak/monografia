@@ -1,0 +1,122 @@
+%% ------------------------------------------------------------------------- %%
+\chapter{Introdução}
+\label{cap:introducao}
+
+    As redes sociais tem ocupado um espaço cada vez maior no cotidiano das pessoas e, mais que isso, a variedade de redes tem crescido muito, o que faz as pessoas pensarem a respeito da necessidade de fazer parte de uma nova rede. Apesar disso, a existência de uma rede social acadêmica em universidades se faz importante por auxiliar muito na disseminação do conhecimento, unir pesquisas de regiões diferentes que tratam sobre temas em comum e aproximar mais alunos e professores. 
+    
+    Baseada nesse pensamento, a rede colaborativa acadêmica Stoa foi criada na Universidade de São Paulo (USP) há muitos anos e, atualmente, utiliza a plataforma livre para redes socias Noosfero. No entanto, muitos usuários não percebem o potencial da rede, de modo que a encaram apenas como mais uma rede social, sem diferenciais.
+    
+    
+%    A importância da experiência do usuário ao utilizar um determinado produto está cada vez mais forte com o passar dos anos. Se um usuário fica insatisfeito após a utilização de um produto, ele troca por um outro similar que o agrade mais. 
+
+    Neste trabalho de conclusão de curso, serão estudados métodos de avaliação de usabilidade na Internet para aplicação na rede colaborativa Stoa.
+
+%- Contexto
+%- O que vai ser abordado e a divisão do texto
+%- A que conclusão chegou
+%Escrever bem � uma arte que exige muita t�cnica e dedica��o. H� v�rios bons livros
+%sobre como escrever uma boa disserta��o ou tese. Um dos trabalhos pioneiros e mais
+%conhecidos nesse sentido � o livro de Umberto Eco \cite{eco:09} intitulado 
+%\emph{Como se faz uma tese}; � uma leitura bem interessante mas, como foi escrito 
+%em 1977 e � voltado para teses de gradua��o na It�lia, n�o se aplica tanto a n�s.
+
+%Para a escrita de textos em Ci�ncia da Computa��o, o livro de Justin Zobel, 
+%\emph{Writing for Computer Science} \cite{zobel:04} � uma leitura obrigat�ria. 
+%O livro \emph{Metodologia de Pesquisa para Ci�ncia da Computa��o} de 
+%Raul Sidnei Wazlawick \cite{waz:09} tamb�m merece uma boa lida.
+%J� para a �rea de Matem�tica, dois livros recomendados s�o o de Nicholas Higham,
+%\emph{Handbook of Writing for Mathematical Sciences} \cite{Higham:98} e o do criador
+%do \TeX, Donald Knuth, juntamente com Tracy Larrabee e Paul Roberts, 
+%\emph{Mathematical Writing} \cite{Knuth:96}.
+
+%O uso desnecess�rio de termos em lingua estrangeira deve ser evitado. No entanto,
+%quando isso for necess�rio, os termos devem aparecer \emph{em it�lico}.
+
+%\begin{small}
+%\begin{verbatim}
+%Modos de cita��o:
+%indesej�vel: [AF83] introduziu o algoritmo �timo.
+%indesej�vel: (Andrew e Foster, 1983) introduziram o algoritmo �timo.
+%certo : Andrew e Foster introduziram o algoritmo �timo [AF83].
+%certo : Andrew e Foster introduziram o algoritmo �timo (Andrew e Foster, 1983).
+%certo : Andrew e Foster (1983) introduziram o algoritmo �timo.
+%\end{verbatim}
+%\end{small}
+
+%Uma pr�tica recomend�vel na escrita de textos � descrever as legendas das
+%figuras e tabelas em forma auto-contida: as legendas devem ser razoavelmente
+%completas, de modo que o leitor possa entender a figura sem ler o texto onde a
+%figura ou tabela � citada.  
+
+%Apresentar os resultados de forma simples, clara e completa � uma tarefa que
+%requer inspira��o. Nesse sentido, o livro de Edward Tufte \cite{tufte01:visualDisplay},
+%\emph{The Visual Display of Quantitative Information}, serve de ajuda na 
+%cria��o de figuras que permitam entender e interpretar dados/resultados de forma
+%eficiente.
+
+% \emph{Thesis are random access. Do NOT feel obliged to read a thesis from beginning to end.}
+
+
+\section{O Stoa}
+\label{sec:stoa}
+    Dentro da necessidade de se manter a troca de conhecimentos ocorrida durante as aulas para além das salas da Universidade, em um mundo cada vez mais virtual, o Stoa\cite{stoa} surgiu. Este sistema trata-se da rede acadêmica colaborativa da Universidade de São Paulo (USP), que, iniciada há muitos anos, foi reativada e reimplementada em novembro de 2012 sob a plataforma \emph{web} livre de redes sociais Noosfero\cite{noosfero}. Atualmente, a rede conta com mais de 78 000 usuários registrados, abrangendo as mais diversas áreas da USP, assim como convidados não vinculados a esta universidade.
+    O Stoa se diferencia das demais redes sociais por apresentar foco acadêmico e incentivar a troca de conhecimento entre as pessoas. Foi projetado para que, em seu ambiente, docentes, discentes e funcionários possuam o mesmo nível hierárquico, possibilitando assim discussões horizontais, com maior liberdade a todos os usuários. Com seu uso, a troca de informações entre usuários com a mesma área de interesse é bastante facilitada e recomendada.
+
+    No entanto, conforme será confirmado na subseção ~\ref{sec:observacoes}, grande parte dos usuários cadastrados na rede apenas registram-se no Stoa a pedido de um docente, para realizar atividades de alguma disciplina. 
+    
+    %Além disso, alguns recursos .
+
+%  \frametitle{\insertsection} 
+
+%% ------------------------------------------------------------------------- %%
+\section{Motivações}
+\label{sec:motivos}
+
+    Este trabalho foi elaborado em continuação a um estágio de desenvolvimento na rede acadêmica colaborativa da USP, o Stoa, e teve início a partir do grande descontentamento demonstrado por usuários ao utilizarem suas funcionalidades, pois algumas possuíam falhas, enquanto outras eram de difícil utilização. Para isso, seria possível realizar um estudo aprofundado sobre usabilidade, compreendendo melhor a importância do usuário em \emph{software}, além de manter e aumentar o contato com o Stoa, um grande projeto brasileiro de \emph{software} livre. 
+    
+    
+
+%    Entender a importância do usuário em softwares
+%    Deixar o usuário feliz
+%  }
+  % or you can use the \uncover command to reveal general
+  % content (not just \items):
+%  \item<6-> {
+%    Fifth item. %\uncover<6->{Extra text in the fifth item.}
+%  }
+
+%Considera��es preliminares\footnote{Nota de rodap� (n�o abuse).}\index{genoma!projetos}.
+% index permite acrescentar um item no indice remissivo
+
+%% ------------------------------------------------------------------------- %%
+\section{Objetivos}
+\label{sec:objetivo}
+
+    Visando um melhor envolvimento dos usuários com a rede colaborativa Stoa, esta será avaliada do ponto de vista da usabilidade, a fim de aproximar as motivações e os objetivos dos usuários ao utilizarem o Stoa com os objetivos desta rede, tornando-a mais amigável aos usuários, aprimorando sua estrutura e dando uma relevância maior aos diferenciais de uma rede colaborativa acadêmica. Para tal, será identificada a maioria dos problemas de usabilidade no sistema Stoa. 
+    
+%% ------------------------------------------------------------------------- %%
+\section{Contribuições}
+\label{sec:contribucoes}
+
+    Dentre as diversas contribuições deste trabalho, destacam-se:
+
+\begin{itemize}
+  \item {
+    Auxiliar na disseminação do conhecimento, ao implementar melhorias em uma plataforma de software livre e ao incentivar o uso de uma rede acadêmica e colaborativa;
+  }
+  % You can also specify when the content should appear
+  % by using <n->:
+  \item {
+    Aumentar a satisfação do usuário ao utilizar o Stoa, a rede colaborativa da Universidade de São Paulo.
+  }
+\end{itemize}
+
+%% ------------------------------------------------------------------------- %%
+\section{Organização do Trabalho}
+\label{sec:organizacao_trabalho}
+
+No Capítulo~\ref{cap:revisao}, são apresentados os principais conceitos relacionados ao termo \emph{usabilidade}, bem como diversos métodos de aplicação de testes de usabilidade e as precauções a serem tomadas ao se realizar uma análise de dados. 
+Em seguida, no Capítulo~\ref{cap:metodologia}, é descrito o processo através do qual esta pesquisa foi realizada, explicando as métricas e métodos utilizados. O Capítulo~\ref{cap:resultados}, por sua vez, apresenta os resultados obtidos após a aplicação do teste de usabilidade. No Capítulo~\ref{cap:melhorias}, o leitor poderá observar alguns exemplos de funcionalidades com falhas de usabilidade e soluções encontradas para estes problemas.Finalmente, no
+Capítulo~\ref{cap:conclusoes}, são expostas as conclusões desta pesquisa, as dificuldades encontradas durante sua realização, as matérias envolvidas e são apresentados os planos existentes para a continuação deste trabalho.
+
+%As sequências testadas no trabalho est�o dispon�veis no Ap�ndice \ref{ape:sequencias}.
