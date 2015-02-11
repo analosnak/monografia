@@ -2,7 +2,7 @@
 \chapter{Revisão de Literatura}
 \label{cap:revisao}
 
-	Para a realização deste trabalho, foi feita a pesquisa de termos relacionados à palavra usabilidade, para melhor entendimento dos conceitos citados neta área, e de vários métodos existentes utilizados para avaliar a usabilidade em um ambiente específico, para aprimorar a escolha dos métodos a serem trabalhados nesta pesquisa. 
+	Para a realização deste trabalho, foi feita a pesquisa de termos relacionados à palavra usabilidade, para melhor entendimento dos conceitos citados nesta área, e de vários métodos existentes utilizados para avaliar a usabilidade em um ambiente específico, para aprimorar a escolha dos métodos a serem trabalhados nesta pesquisa. 
 %% ------------------------------------------------------------------------- %%
 
 \section{Conceitos de usabilidade}
@@ -33,16 +33,34 @@ Com base nessas definições, pode-se afirmar que um produto com boa usabilidade
 
 	No entanto, para medir a usabilidade, métricas específicas são utilizadas, conforme afirmam Tullis et al. \cite{tullis:13}: “Uma métrica de usabilidade revela algo sobre a interação entre o usuário e o produto: algum aspecto de eficácia (ser capaz de completar uma tarefa), eficiência (a quantidade de esforço exigido para completar a tarefa), ou satisfação (o grau de felicidade com sua experiência em que o usuário estava durante a realização da tarefa).” .  Em outras palavras, métricas de usabilidade, ao contrário da maioria das métricas, medem dados sobre atributos relacionados a pessoas.
 
-	Segundo Tullis et al. \cite{tullis:13}, as principais métricas de usabilidade são sucesso de uma tarefa, tempo para realização de uma tarefa, quantidade de erros, eficiência, capacidade de aprendizado, métricas baseadas em questões, métricas de auto-relato, métricas comportamentais e psicológicas, métricas combinadas e comparativas, métricas de websites ao vivo e ordenação de cartões. O tipo de métricas que será utilizado neste trabalho, métricas baseadas em questões, será detalhado a seguir.
+	Segundo Tullis et al. \cite{tullis:13}, as principais métricas de usabilidade são: sucesso de uma tarefa, tempo para realização de uma tarefa, quantidade de erros, eficiência, capacidade de aprendizado, métricas baseadas em problemas, métricas de auto-relato, métricas comportamentais e psicológicas, métricas combinadas e comparativas, métricas de websites ao vivo e métrica de ordenação de cartões. O tipo de métrica utilizado neste trabalho serão as métricas baseadas em problemas de usabilidade, devido ao cenário descrito por Tullis et al. no qual esse teste se encaixa. O cenário escolhido será especificado na seção ~\ref{sec:metricas-usadas}, e o tipo de métrica selecionado  será detalhado a seguir.
 \\
-%\subsubsection{Métricas baseadas em questões}
-%\label{sec:metricas-questoes}
+\subsubsection{Métricas baseadas em problemas}
+\label{sec:metricas-problemas}
 
-    Não há uma definição simples e clara sobre o que são questões, mas uma definição possível é que questões são quaisquer estados do produto que prejudiquem a interação deste com o usuário e que, se alteradas, vão melhorar o software. Exemplos de questões são instâncias que não permitem o sucesso de uma tarefa, que levam o usuário a sair do curso da tarefa, que levam à falsa suposição do sucesso de uma tarefa, dentre outros \cite{tullis:13}.
+    Não há uma definição simples e clara sobre o que são problemas de usabilidade, mas uma definição possível é que são considerados problemas de usabilidade quaisquer estados do produto que prejudiquem a interação deste com o usuário e que, se alteradas, vão melhorar o software. Como exemplos de problemas, pode-se citar instâncias que: não permitem o sucesso de uma tarefa, como ao clicar em um link com conteúdo diferente esperado, estando na página principal, e ser redirecionado à mesma página; levam o usuário a sair do curso da tarefa, como ao existir links mais chamativos ao usuário que o link da tarefa inicial que ele desejava realizar; levam à falsa suposição do sucesso de uma tarefa, como ao não mostrar ao usuário uma falha ocorrida no processo de criação de um conteúdo; dentre outros \cite{tullis:13}.
 
-    Apesar de muitos profissionais de usabilidade interpretarem questões de usabilidade como dados puramente qualitativos e não os associarem a métricas, a medição destas questões existe e auxilia bastante na melhora do design do produto \cite{tullis:13}. Para medição das questões de usabilidade, é possível utilizar as seguintes métricas: frequência da quantidade de questões, frequência de questões por participante, frequência de participantes que identificam cada questão, classificação de questões por categorias e classificação de questões por tarefas \cite{tullis:13}.
+    Apesar de muitos profissionais de usabilidade interpretarem problemas de usabilidade como dados puramente qualitativos e não os associarem a métricas, a medição destes problemas existe e auxilia bastante na melhoria do design do produto \cite{tullis:13}. Para medição dos problemas de usabilidade, é possível utilizar as seguintes métricas: frequência da quantidade de problemas, frequência de problemas por participante, frequência de participantes que identificam cada problema, classificação de problemas por categorias e classificação de problemas por tarefas \cite{tullis:13}.
 
-Para este trabalho, as questões serão analisadas a partir das métricas "classificação de questões por categorias", "classificação de questões por tarefas" e "frequência de participantes que identificam cada questão".
+As métricas baseadas em problemas que serão utilizadas nessa avaliação somativa são:
+%Na  Figura~\ref{fig:chart-area} ***(mudar imagem)***, é possível ver quais métricas baseadas em problemas serão utilizadas nessa avaliação somativa. São elas:
+
+\begin{itemize}
+\item "classificação de problemas  por categorias"
+
+Para facilitar a identificação e avaliação das falhas identificadas pelo usuário, é preciso separar em grupos.
+
+\item "classificação de problemas por tarefas" 
+
+Unindo as funcionalidades por tarefa, o usuário sente-se mais seguro para identificar eventuais falhas que ocorram, facilitando a comparação entre as funcionalidades.
+
+\item "frequência de participantes que identificam cada problema". 
+
+Com essa métrica, é possível, dentro do mesmo escopo, classificar facilmente as falhas de usabilidade.
+
+\end{itemize}
+
+O restante das métricas baseadas em problemas não poderá ser utilizado devido à insuficiência de dados disponíveis.
 
 %\subsubsection{Métricas de relato do usuário}
 %\label{sec:metricas-usuario}
@@ -50,20 +68,20 @@ Para este trabalho, as questões serão analisadas a partir das métricas "class
 %\subsection{Interação Humano-Computador}
 %\label{sec:ihc}
 
-\subsection{Design centrado no usuário}
-\label{sec:dcu}
-	Barnum\cite{barnum:01} defende que o \emph{design} centrado no usuário “[...]é o processo de desenvolvimento do produto baseado em aprender sobre o usuário e em aplicar esse aprendizado para criar produtos que vão de encontro às necessidades dos usuários”  
+%\subsection{Design centrado no usuário}
+%\label{sec:dcu}
+%	Barnum\cite{barnum:01} defende que o \emph{design} centrado no usuário “[...]é o processo de desenvolvimento do produto baseado em aprender sobre o usuário e em aplicar esse aprendizado para criar produtos que vão de encontro às necessidades dos usuários”  
 
 %% ------------------------------------------------------------------------- %%
 
-\section{Métodos de aplicação de teste de usabilidade}
+\section{Tipos de teste de usabilidade}
 \label{sec:metodos-aplicacao}
-    Como verificado na seção anterior, todos os termos relacionados com usabilidade envolvem o usuário, portanto é presumível que os testes de usabilidade sejam realizados com usuários do produto. No entanto, é preciso decidir qual o melhor momento para tal teste ser feito. Há dois tipos de testes que podem ser aplicados durante o processo de produção.
+    Como verificado na seção anterior, todos os termos relacionados com usabilidade envolvem o usuário, portanto é presumível que os testes de usabilidade sejam realizados com usuários do produto. No entanto, é preciso decidir qual o melhor momento para tal teste ser feito. Há dois tipos de testes que podem ser aplicados durante o processo de produção, chamados formativo e somativo, que serão descritos abaixo.
 
 \subsection{Teste formativo}
 \label{sec:teste-formativo}
 %TODO: incluir cite%
-    Este tipo de teste passou a ser mais utilizado com a importância de se reavaliar o que era modificado após um teste de usabilidade e de se avaliar a interação do usuário com novas funcionalidades. Além disso, é muito mais vantajoso a quem lança o produto que ele seja avaliado antes de seu lançamento, para evitar que usuários deixem de utilizar o produto por incontentamentos, mesmo depois de atualizações que corrijam o problema encontrado terem sido implementadas. 
+    Este tipo de teste passou a ser mais utilizado com a importância de se reavaliar o que era modificado após um teste de usabilidade e de se avaliar a interação do usuário com novas funcionalidades. Além disso, é muito mais vantajoso a quem lança o produto que ele seja avaliado antes de seu lançamento, para evitar que usuários deixem de utilizar o produto por incontentamentos, mesmo que atualizações que corrijam o problema encontrado sejam implementadas posteriormente. 
     Com o intuito de suprir essas necessidades, o teste formativo é realizado de forma iterativa e frequente, e muitas vezes é incorporado ao processo de desenvolvimento, mais especificadamente, no desenvolvimento ágil. Quando em conjunto com este tipo de desenvolvimento, com a devida presença de profissionais em \emph{design}, é incluso em todas as fases de cada iteração do processo.
     Nas fases que antecedem o lançamento do produto, a avaliação da usabilidade é feita através de protótipos, pois o produto final para aquele lançamento ainda não está finalizado. Dentre os principais tipos de protótipos, pode-se citar os de papel, de \emph{powerpoint} e \emph{online}. 
     
@@ -74,7 +92,7 @@ Para este trabalho, as questões serão analisadas a partir das métricas "class
 \label{sec:teste-somativo}
     Quando usuários paravam de utilizar algum produto por frustrações ou faziam críticas negativas sobre ele, percebeu-se a importância de avaliar a usabilidade dos produtos. Porém, no princípio essa avaliação era feita tarde demais, depois que o produto já havia sido lançado ao mercado. Esse tipo de avaliação, realizado pós-lançamento, é chamado de teste somativo. 
     Ao contrário do teste formativo, ele é geralmente realizado apenas uma vez, para avaliar a eficiência do produto como um todo, tendo como base objetivos específicos \cite{barnum:01} como, por exemplo, avaliar a utilidade de determinadas funcionalidades no uso constante do produto pelos usuários. É importante notar que nele se faz necessária uma boa documentação dos erros encontrados na análise para correção posterior dos mesmos.
-    Neste trabalho, este será o tipo de teste adotado, pois há um objetivo específico: avaliar a maioria dos problemas de usabilidade no sistema, através do cenário de descoberta de problemas.
+    Neste trabalho, este será o tipo de teste adotado, pois há um objetivo específico: avaliar e classificar a maioria dos problemas de usabilidade no sistema, através do cenário de descoberta de problemas.
     
 %	antigamente mais usado; só uma vez
 %	pra avaliar performance do produto com base em certos objetivos (barnum:01 122)
@@ -83,11 +101,11 @@ Para este trabalho, as questões serão analisadas a partir das métricas "class
 	
 %% ------------------------------------------------------------------------- %%
 
-\section{Métricas de avaliação}
-\label{sec:metricas-avaliacao}
-    Após a coleta dos dados, é necessária uma correta análise deles. Para tal, é importante não apenas distinguir os dados subjetivos dos objetivos, mas também evitar incoerências entre os dois tipos de dados \cite{barnum:01}, como ao se afirmar que uma funcionalidade é de fácil entendimento (dado subjetivo), mas demonstrar dificuldades ao realizar uma tarefa com este recurso (dado objetivo).
-    Neste trabalho, serão feitas análises quantitativas das questões de usabilidade avaliadas.
-%	barnum:01: fazer análise quantitativa das questões de %usabilidade; tomar cuidado com conflito entre dados subjetivos e objetivos; reunir também as críticas positivas
+%\section{Métricas de avaliação}
+%\label{sec:metricas-avaliacao}
+%    Após a coleta dos dados, é necessária uma correta análise deles. Para tal, é importante não apenas distinguir os dados subjetivos dos objetivos, mas também evitar incoerências entre os dois tipos de dados \cite{barnum:01}, como ao se afirmar que uma funcionalidade é de fácil entendimento (dado subjetivo), mas demonstrar dificuldades ao realizar uma tarefa com este recurso (dado objetivo).
+%    Neste trabalho, serão feitas análises quantitativas dos problemas de usabilidade avaliados.
+%	barnum:01: fazer análise quantitativa dos problemas de %usabilidade; tomar cuidado com conflito entre dados subjetivos e objetivos; reunir também as críticas positivas
 %TODO: procurar livro do Tullis%
 
 %% ------------------------------------------------------------------------- %%

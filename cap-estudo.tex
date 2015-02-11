@@ -2,14 +2,14 @@
 \chapter{Resultados}
 \label{cap:resultados}
     
-    Para tratamento dos dados, foram avaliadas as diferentes perguntas relacionadas a um mesmo contexto. Este contexto variava desde grupos de funcionalidades até a informações pessoais do usuário. 
+    Para tratamento dos dados, foram avaliadas as diferentes perguntas relacionadas a um mesmo contexto. Este contexto variava desde grupos de funcionalidades, grupos estes citados no capitulo anterior, até a informações pessoais do usuário. 
     
-    As perguntas da maior parte dos grupos de funcionalidades abordavam alguns parâmetros e, a fim de priorizar as funcionalidades de cada grupo, fez-se necessária a criação de um índice estatístico, que será descrito no decorrer desta seção.  Analisando o resultado das perguntas referentes ao perfil dos membros da rede, algumas observações interessantes puderam ser feitas, como realatado a seguir.
+    As perguntas da maior parte dos grupos de funcionalidades abordavam alguns parâmetros e, com o intuito de priorizar as funcionalidades de cada grupo, fez-se necessária a criação de um índice estatístico, que será descrito no decorrer desta seção.  Analisando o resultado das perguntas referentes ao perfil dos membros da rede, algumas observações interessantes puderam ser feitas, como relatado a seguir.
 
 \section{Alguns fatos observados}
 \label{sec:observacoes}
 
-    A partir dos dados recolhidos, foi possível identificar diversas características sobre o perfil dos usuários que utilizam a rede. Uma delas é que aproximadamente metade dos participantes são da área de humanas, enquanto os estudantes da área de biológicas e de exatas representaram, cada grupo, cerca de um quarto das respostas, como mostra a Figura~\ref{fig:chart-area}.
+    A partir dos dados recolhidos pelas 100 respostas obtidas, foi possível identificar diversas características sobre o perfil dos usuários que responderam o questionário. Uma delas é que aproximadamente metade dos participantes da pesquisa são da área de humanas, enquanto os estudantes da área de biológicas e de exatas representaram, cada grupo, cerca de um quarto das respostas, como mostra a Figura~\ref{fig:chart-area}, que apresenta números absolutos.
     
 \begin{figure}[!h]
   \centering
@@ -17,7 +17,7 @@
   \caption{Área de estudo dos participantes}
   \label{fig:chart-area} 
 \end{figure}
-Outra observação é que, considerando o primeiro acesso do usuário na rede, a proporção de usuários interessados no formulário foi a mesma para os seguintes grupos: primeiro acesso há um mês; há um ano; há mais de um ano, como indica a Figura~\ref{fig:chart-firstcontact}.
+Outra observação é que, considerando o primeiro acesso do usuário na rede, a proporção de usuários interessados no questionário foi a mesma para os seguintes grupos: primeiro acesso há um mês; há um ano; há mais de um ano, como indica a Figura~\ref{fig:chart-firstcontact}, também apresentando números absolutos.
     
 \begin{figure}[!h]
   \centering
@@ -25,14 +25,15 @@ Outra observação é que, considerando o primeiro acesso do usuário na rede, a
   \caption{Momento do primeiro contato com a rede}
   \label{fig:chart-firstcontact} 
 \end{figure}
-Uma informação muito relevante sobre o uso do Stoa é o fato de mais de três quartos dos participantes registrarem-se na rede devido à solicitação de um professor, e, por isso, aproximadamente metade dos usuários utilizam a rede principalmente para atividades relacionadas a uma disciplina acadêmica.
+Uma informação muito relevante sobre o uso do Stoa é o fato de mais de três quartos dos participantes deste teste de usabilidade cadastrarem-se na rede devido à solicitação de um professor, e, por isso, vê-se com o questionário que aproximadamente metade dos usuários utilizam a rede principalmente para atividades relacionadas a uma disciplina acadêmica. Com essas observações, é possível inferir que um dos principais objetivos do Stoa, a troca de conhecimento entre usuários com mesmo interesse, não está nos principais objetivos da maioria dos usuários da rede.
+Infelizmente, não é possível generalizar estes resultados para a amostra escolhida nem para todos os usuários do Stoa, pois, apesar de a amostra selecionada ser aleatória, há um viés sobre os usuários que de fato responderam o questionário. No entanto, este método de avaliação é amplamente utilizado por permitir o uso de uma amostra bem maior que outros métodos existentes, além de maior facilidade no tratamento dos dados.
 
 %área; tempo desde primeiro acesso
 
 \section{Índice estatístico}
 \label{sec:indice}
 
-    Foram feitas parametrizações com as marcações "melhor", "pior" e "maior uso" em determinados grupos de funcionalidades e, para esses recursos serem priorizados dentro do respectivo grupo, um índice apropriado foi estabelecido. Para a classificação, os requisitos para este índice exigiam que as funcionalidades com os parâmetros "pior" e "melhor" recebessem valores bem distintos e que fossem diferenciadas das demais. Além disso, a funcionalidade com o parâmetro "maior uso" deveria receber uma importância positiva, pois era utilizada mais que as demais funcionalidades de seu grupo.
+    Foram feitas parametrizações com as marcações "melhor", "pior"  e "maior uso"  em determinados grupos de funcionalidades e, para esses recursos serem priorizados dentro do respectivo grupo, um índice apropriado foi estabelecido em conversa com especialistas da área. Para a classificação, os requisitos para este índice exigiam que as funcionalidades com os parâmetros "pior" e "melhor" recebessem valores bem distintos e que fossem diferenciadas das demais funcionalidades sem parâmetro. Além disso, a funcionalidade com o parâmetro "maior uso" deveria receber uma importância positiva, pois era utilizada mais que as demais funcionalidades de seu grupo, que pertence a uma categoria, com um funcionalidades de mesmo escopo.
     
     Com as considerações acima apontadas, foi elaborado o seguinte índice:
     \begin{itemize}
@@ -47,19 +48,19 @@ Uma informação muito relevante sobre o uso do Stoa é o fato de mais de três 
         \item
         Atribuir 1 às demais funcionalidades
         \item
-        Atribuir um peso de 1.2 à funcionalidade escolhida para "maior uso"
+        Atribuir um peso de 1.2 à funcionalidade escolhida para "maior uso", ou seja, após as atribuições acima, multiplicar o valor desta funcionalidade por 1.2
         \end{itemize}
     \item 
-    Em seguida, para cada funcionalidade, foi calculada a média de todos os valores associados às respostas dos usuários.
+    Em seguida, para cada funcionalidade, foi calculada a média de todos os valores associados às respostas dos usuários, ou seja, foram somadas as pontuações atribuídas a essa funcionalidade por cada usuário e o resultado foi dividido pela quantidade de usuários que responderam a essa questão. Como cada grupo de funcionalidades com esses parâmetros estava dentro da mesma pergunta no questionário, a quantidade de usuários para cada funcionalidade do mesmo grupo era a mesma.
     \item 
     Com esta média, tornou-se possível ordenar as funcionalidades de acordo com a opinião dos usuários.
     \end{itemize}
     
     
-\section{Priorização das questões}
+\section{Priorização dos problemas de usabilidade}
 \label{sec:priorizacao}
 
-    O índice descrito na seção anterior,~\ref{sec:indice} não pôde, no entanto, ser empregado a todos os grupos de funcionalidades, pois algumas funcionalidades não podiam ser comparadas com outras, como no caso da ferramenta \emph{Google Analytics}. Os grupos de funcionalidades submetidos ao índice foram: i, v, vi; e, para cada grupo, a média de cada funcionalidade, assim como a ordenação, podem ser vistas nas tabelas a seguir:
+    O índice descrito na seção anterior, ~\ref{sec:indice}, não pôde, no entanto, ser empregado a todos os grupos de funcionalidades, pois algumas funcionalidades não podiam ser comparadas com outras ou não foram avaliadas com esses parâmetros, como no caso do grupo vii, sobre a ferramenta \emph{Google Analytics}. Os grupos de funcionalidades submetidos ao índice foram: i, v, vi; e, para cada grupo, a média de cada funcionalidade, assim como a ordenação, podem ser vistas nas tabelas a seguir:
 
 \begin{figure}[!h]
   \centering
@@ -85,7 +86,7 @@ Uma informação muito relevante sobre o uso do Stoa é o fato de mais de três 
 \end{figure}
 
 
-    Para a classificação geral, não foi possível comparar funcionalidades de grupos diferentes, pois o usuário não respondeu às perguntas dentro deste contexto. Por isso, foi selecionado o recurso considerado o pior pela ordenação de cada um dos grupos acima citados: 
+    Para a classificação geral, não foi possível comparar funcionalidades de grupos diferentes, pois o usuário não respondeu às perguntas dentro deste contexto, envolvendo funcionalidades de grupos distintos simultaneamnte. Por isso, foi selecionada a funcionalidade considerada a pior pela ordenação de cada um dos grupos acima citados: 
     \begin{itemize}
     \item Busca de pessoas ou comunidades pelos blocos laterais, que exibem uma pequena amostra das pessoas ou comunidades - Grupo i
     \item Criação ou edição de um cabeçalho ou rodapé para o perfil - Grupo v

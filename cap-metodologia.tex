@@ -7,32 +7,36 @@
 \section{Métricas utilizadas}
 \label{sec:metricas-usadas}
 
-	Visando tais fins, foi adotado o cenário de estudo de descoberta de problemas \cite{tullis:13} e as métricas de usabilidade utilizadas foram todas baseadas em questões: "classificação de questões por categorias", "classificação de questões por tarefas" e "frequência de participantes que identificam cada questão". Uma descrição mais detalhada da aplicação destas métricas na coleta dos dados pode ser encontrada na próxima seção.
+	Visando tais fins, foi adotado o cenário de estudo de descoberta de problemas de usabilidade \cite{tullis:13} e as métricas de usabilidade utilizadas foram todas baseadas em problemas de usabilidade, descritas na subseção ~\ref{sec:metricas-problemas}. Como exemplos de problemas presentes na rede, é possível observar que a maioria dos links presentes no rodapé, como o link "Termos de Uso", redirecionam o usuário à mesma página, ou seja, a tarefa de acessar os Termos de Uso do sistema não pode ser realizada com sucesso. Além disso, caso, durante a tentativa de alterar um conteúdo próprio, ocorre um erro, o usuário não recebe notificação deste erro, ficando sem garantia de que o conteúdo foi devidamente alterado.
+
+ Mais especificamente, as métricas que compuseram esse teste foram: "classificação de problemas por categorias", "classificação de problemas por tarefas" e "frequência de participantes que identificam cada problema". Uma descrição mais detalhada da aplicação destas métricas na coleta dos dados pode ser encontrada na próxima seção.
 	
-\section{Coleta de dados}
+\section{Coleta de dados com questionário}
 \label{sec:coleta-dados}
 
-	A coleta dos dados para a realização de uma pesquisa de usabilidade pode ser feita de diversas formas, dentre elas, através de formulários, de testes em laboratório e de entrevistas. Para este estudo sobre o projeto Stoa, foi utilizada apenas a aplicação de um formulário. 
+	A coleta dos dados para a realização de uma pesquisa de usabilidade pode ser feita de diversas formas, dentre elas, através de questionários, de testes em laboratório e de entrevistas. Para este estudo sobre o projeto Stoa, por ter o enfoque em uma priorização dos principais problemas de usabilidade no sistema, era desejável realizar um teste com grande amostra para melhor análise quantitativa. Com base nos métodos recomendados por Tullis et al.\cite{tullis:13} para este cenário, teste em laboratório com cinco a dez usuários e questionários para pelo menos 100 usuários, foi escolhida a aplicação de um questionário como método para responder a objetivo desta pesquisa.
 	
-\subsection{Aplicação de formulário}
+\subsection{Aplicação de questionário}
 \label{sec:aplic-form}
 
-	A finalidade do formulário é reunir, de maneira prática e sucinta, dados valiosos à pesquisa sobre um público-alvo específico para possibilitar conclusões mais fidedignas. Para uma boa análise de dados de um questionário, é importante evitar ao máximo campos de texto, pois é difícil de comparar, automaticamente e dentro das métricas escolhidas, muitos textos diferentes.
+	A finalidade do questionário é reunir, de maneira prática e sucinta, dados valiosos à pesquisa sobre um público-alvo específico para possibilitar conclusões mais fidedignas. Para uma boa análise de dados de um questionário, é importante evitar ao máximo campos de texto, pois é difícil de comparar, automaticamente e dentro das métricas escolhidas, muitos textos diferentes.
 	
-	Algumas boas práticas ao se trabalhar com um formulário são definir uma amostra tal que o público-alvo desejado seja cerca de 20\% dessa amostra, enviar lembretes aos usuários escolhidos para o preenchimento do questionário, e evitar deixá-lo muito extenso, pois, nesse caso, muitas pessoas irão desistir antes de chegar ao fim.
+	Algumas boas práticas ao se trabalhar com um questionário são definir uma amostra tal que o público-alvo desejado seja cerca de 15\% dessa amostra~\ref{SurveyGizmo:14}, enviar lembretes aos usuários escolhidos para o preenchimento do questionário, e evitar deixá-lo muito extenso, pois, nesse caso, muitas pessoas irão desistir antes de chegar ao fim.
 	
 
-    Para a aplicação do formulário, foram selecionadas aleatoriamente 1000 usuários dentre todos os que utilizaram a rede no período de um mês antes do envio do questionário. 29 deram falha no envio, de modo que 971 receberam o email. Foram enviados dois emails (o primeiro avisando da pesquisa e o segundo como forma de lembrete da pesquisa) à amostra, com prazo de um mês para ser preenchido, e foram obtidas respostas de exatamente 100 membros.
+	Para este questionário, o público-alvo escolhido foi composto por usuários ativos no mês anterior à aplicação da pesquisa, com o intuito de garantir que os participantes já teriam tido um certo contato com as funcionalidades mais recentes do sistema. Não foi selecionado nenhum perfil específico de usuário para o questionário, pois havia a necessidade de analisar uma opinião geral inicial sobre o sistema e de futuramente formular um ranking de funcionalidades por perfil. Baseando-se nos usuários que se registraram no Stoa no mês de junho, desejava-se obter resposta de aproximadamente 150 usuários \cite{penwarden:14} e, para isso, enviar o questionário a 1000 usuários seria suficiente. Esses 1000 usuários foram selecionados aleatoriamente dentre todos os usuários que utilizaram o sistema no mês de junho. Dos 1000 emails enviados contendo um link\footnote{Sua versão exibida aos usuários pode ser vista em: \url{http://social.stoa.usp.br/suporte/usabilidade/pesquisa}} para uma página do Stoa com o questionário, 29 deram falha no envio, de modo que 971 receberam o email. Foram enviados dois emails (o primeiro avisando da pesquisa e o segundo como forma de lembrete da pesquisa) à amostra, com prazo de um mês para ser preenchido, e foram obtidas respostas de exatamente 100 membros.
+
+    %Para a aplicação do questionário, foram selecionadas aleatoriamente 1000 usuários dentre todos os que utilizaram a rede no período de um mês antes do envio do questionário. 29 deram falha no envio, de modo que 971 receberam o email. Foram enviados dois emails (o primeiro avisando da pesquisa e o segundo como forma de lembrete da pesquisa) à amostra, com prazo de um mês para ser preenchido, e foram obtidas respostas de exatamente 100 membros.
 
 %	Para esta pesquisa, foi utilizado como público-alvo 1000 usuários escolhidos aleatoriamente dentre todos os que utilizaram a rede no período de um mês antes do envio do questionário, e foi dado o prazo de um mês para ser preenchido, com lembrete enviado após 10 dias do primeiro pedido.
 	
-	A seguir serão descritas as principais características do formulário \footnote{Sua versão original pode ser vista em: \url{http://social.stoa.usp.br/suporte/usabilidade/pesquisa}}.
+	A seguir serão descritas as principais características do questionário ***colocar como apêndice***.
 	
 
-\subsection{Classificação das questões}
+\subsection{Classificação dos problemas de usabilidade}
 \label{sec:classificacao}
 	
-	Foram selecionadas as funcionalidades consideradas principais pelos desenvolvedores da rede para serem avaliadas. Em seguida, essas funcionalidades foram separadas em categorias no formulário, para facilitar o preenchimento pelo usuário. As categorias, grupos de funcionalidades e funcionalidades foram: 
+	Foram selecionadas as funcionalidades consideradas principais pelos desenvolvedores da rede para serem avaliadas. Em seguida, visando utilizar a métrica  "classificação de problemas por categorias", essas funcionalidades foram separadas em categorias no questionário, para facilitar o preenchimento pelo usuário, pois cada categoria representava funcionalidades de um mesmo tipo. As categorias, grupos de funcionalidades, e funcionalidades foram: 
 \begin{itemize}
 \item Busca \\
     \begin{itemize}
@@ -43,7 +47,7 @@
 \item Informações sobre o Stoa \\
     \begin{itemize}
     \item Grupo ii\\
-    Quem somos (link rodapé); Termos de uso (link rodapé); Documentação (link rodapé); Fale conosco (link rodapé); Sugerir uma notícia (link rodapé); Sugerir melhorias (link rodapé); Repostar um bug (link rodapé); Desenvolvimento (link rodapé); Compartilhar isto! (link rodapé); Eventos (link rodapé); Conteúdos no site (link rodapé);
+    Quem somos (link rodapé); Termos de uso (link rodapé); Documentação (link rodapé); Fale conosco (link rodapé); Sugerir uma notícia (link rodapé); Sugerir melhorias (link rodapé); Reportar um bug (link rodapé); Desenvolvimento (link rodapé); Compartilhar isto! (link rodapé); Eventos (link rodapé); Conteúdos no site (link rodapé);
     \item Grupo iii\\
     Link do Moodle/Wiki no logo do Stoa no canto esquerdo do cabeçalho; Link do Moodle/Wiki nos logos do Moodle e da Wiki presentes à direita na página inicial.
     \end{itemize}
@@ -55,7 +59,7 @@
     \item Grupo v\\
     Criação ou edição de um cabeçalho ou rodapé para o perfil; Edição da aparência (do leiaute) do perfil; Edição das informações principais do perfil (nome, contato, descrição, privacidade, foto do perfil, etc. ); Edição dos blocos laterais (por padrão, com lista de amigos/integrantes, de conteúdos recentes, de links e, para o perfil de usuário, de comunidades); 
     \item Grupo vi\\
-Configuração do tempo de tolerância para edição de comentários após serem publicados; Gerenciamento de amigos (adição ou exclusão; para comunidades, também alteração do papel na comunidade); Gerenciamento de formulários (criação, edição, remoção, vizualização de submissões); Gerenciamento de tarefas (aprovação ou recusa de tarefas); Sobre edição de perfil de comunidade, gerenciamento de sub-grupos; Sobre edição de perfil de usuário, gerenciamento de seus grupos/comunidades (criação, edição, exclusão, remoção); 
+Configuração do tempo de tolerância para edição de comentários após serem publicados; Gerenciamento de amigos (adição ou exclusão; para comunidades, também alteração do papel na comunidade); Gerenciamento de questionários (criação, edição, remoção, vizualização de submissões); Gerenciamento de tarefas (aprovação ou recusa de tarefas); Sobre edição de perfil de comunidade, gerenciamento de sub-grupos; Sobre edição de perfil de usuário, gerenciamento de seus grupos/comunidades (criação, edição, exclusão, remoção); 
     \item Grupo vii\\
 Google Analytics
     \end{itemize}
@@ -63,7 +67,7 @@ Google Analytics
 \item Gerenciamento de conteúdos \\
     \begin{itemize}
     \item Grupo viii\\
-    Blog; Post no blog pessoal; Post em blog de uma comunidade; Comentário em um post de blog; Fórum; Tópico em fórum; Comentário em tópico de fórum; Galeria; Imagem; Pasta para gerenciamento de conteúdo; Evento; Feed RSS; Submissão de trabalho a ser entregue; Submissão de formulário; 
+    Blog; Post no blog pessoal; Post em blog de uma comunidade; Comentário em um post de blog; Fórum; Tópico em fórum; Comentário em tópico de fórum; Galeria; Imagem; Pasta para gerenciamento de conteúdo; Evento; Feed RSS; Submissão de trabalho a ser entregue; Submissão de questionário; 
     \item Grupo ix\\
 Tags; 
     \item Grupo x\\
@@ -80,14 +84,14 @@ Divulgação de post na página principal; Divulgação de post do blog pessoal 
 
 \end{itemize}
 
-	Dentro de cada categoria, foram feitas perguntas a grupos específicos de funcionalidades. Para a maioria das dos grupos de funcionalidades, as perguntas eram realizadas dentro do contexto: funcionalidade mais usada, melhor funcionalidade e pior funcionalidade.
+	Dentro de cada categoria, foram feitas perguntas a grupos específicos de funcionalidades. Para a maioria dos grupos de funcionalidades, as perguntas eram realizadas dentro do contexto: funcionalidade mais usada, melhor funcionalidade e pior funcionalidade.
 
 
 
 \section{Tratamento dos dados}
 \label{sec:trat-dados}
     
-    Com a coleta de dados finalizada, os dados devem ser tratados de acordo com as métricas mais apropriadas para este cenário. Baseando-se na literatura estudada e no sistema a ser avaliado, optou-se por uma análise das respostas obtidas que levasse à priorização das questões selecionadas na implementação do formulário, utilizando métricas como "frequência de participantes que identificam cada questão". 
+    Com a coleta de dados finalizada, os dados devem ser tratados de acordo com as métricas mais apropriadas para este cenário. Baseando-se na literatura estudada e no sistema a ser avaliado, optou-se por uma análise das respostas obtidas que levasse à priorização dos problemas de usabilidade selecionados na implementação do questionário, utilizando métricas como "frequência de participantes que identificam cada problema". 
     
     Deste modo, após tal tratamento, torna-se possível documentar as falhas das funcionalidades e selecionar as classificadas como as piores dentro do contexto do questionário, para serem melhoradas dentro do escopo da usabilidade.
 %    análise quantitativa; priorizar funcionalidades; usar parâmetros e índice

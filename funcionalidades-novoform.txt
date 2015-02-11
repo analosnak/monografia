@@ -1,0 +1,20 @@
+Perfil
+- Registro na rede 
+- Criação de blog pessoal ->divulgar conteúdo
+- Criação de post no blog ->divulgar conteúdo
+- Divulgação de post pessoal em outras comunidades ->divulgar conteúdo
+Comunidades 
+- Busca por comunidades -> disciplina
+- Registro em comunidades -> disciplina
+- Criação e administração de comunidades -> disciplina(prof)
+- Criação e administração de fóruns -> disciplina(prof)
+- Criação e administração de blogs  -> disciplina(prof)
+- Criação e administração de formulários -> disciplina(prof)
+- Criação de posts -> disciplina
+- Divulgação de post próprio de uma comunidade para outra -> divulgar conteúdo
+- Busca de conteúdo -> disciplina
+Subcomunidades
+- Transformação de comunidades em subcomunidades  -> disciplina(prof)
+Entrega de trabalhos
+- Criação e administração de “trabalho a ser entregue”  -> disciplina(prof)
+- Submissão de trabalhos  -> disciplina(estudante)
